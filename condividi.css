@@ -1,0 +1,171 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+  form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bbb;
+  }
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  form input[type="text"], form input[type="file"], form input[type="number"], form textarea , form input[type="date"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  form textarea {
+    resize: none;
+    height: 150px;
+  }
+  form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  form input[type="submit"]:hover {
+    background-color: #2980b9;
+  }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: white;
+}
+
+.bgimg{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image:url("media/1080pimage_blur.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+header .logo {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    height: 75px;
+    width: 100px;
+    float: left;
+}
+
+header .scritta_logo {
+    color: white;
+    font-size: 20px;
+    padding-left: 200px;
+    cursor: pointer;
+    height: 70px;
+    width: 400px;
+}
+
+header .logoTitle{
+    color: white;
+    padding-left: 220px;
+    cursor: pointer;
+}
+
+header .search-form {
+    background-color: blue;
+    width: fit-content;
+    float: right;
+}
+
+header .search-form input {
+    border: none;
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+header .search-form button {
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 5px;
+}
+
+nav button {
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav .line-separator {
+    height: 30px;
+    width: 1px;
+    background-color: white;
+    margin: 0px 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: transparent;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+footer .legal {
+    padding-left: 10px;
+}
+
+footer .contact {
+    padding-right: 10px;
+}

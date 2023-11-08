@@ -1,0 +1,151 @@
+.bgimg{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-image:url("media/1080pimage_blur.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.arrow-icon-left:hover, .arrow-icon-right:hover{
+    transform: scale(130%);
+    transition-duration: 500ms;
+}
+
+.arrow-icon-left, .arrow-icon-right{
+    scale: 60%;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+header .logo {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+    height: 75px;
+    width: 100px;
+    float: left;
+}
+
+header .scritta_logo {
+    color: white;
+    font-size: 20px;
+    padding-left: 200px;
+    cursor: pointer;
+    height: 70px;
+    width: 400px;
+}
+
+header .logoTitle{
+    color: white;
+    padding-left: 220px;
+    cursor: pointer;
+}
+
+header .search-form {
+    background-color: blue;
+    width: fit-content;
+    float: right;
+}
+
+header .search-form input {
+    border: none;
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+header .search-form button {
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 5px;
+}
+
+nav button {
+    color: white;
+    background-color: blue;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav .line-separator {
+    height: 30px;
+    width: 1px;
+    background-color: white;
+    margin: 0px 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: transparent;
+}
+
+main .video-section {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 90vh;
+    padding: 10px;
+}
+
+main .video-section iframe {
+    margin: auto;
+    width: 90vh;
+    height: 400px;
+    border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+footer .legal {
+    padding-left: 10px;
+}
+
+footer .contact {
+    padding-right: 10px;
+}

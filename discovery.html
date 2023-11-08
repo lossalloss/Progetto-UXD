@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VoyageX</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+        <link rel="icon" href="media/logo.svg">
+    </head>
+    <body class="bgimg">
+            <header class="p-3 text-bg-dark">
+                <div class="container">
+                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                      <img src="media/scritta_logo.png" alt="logo" class="scritta_logo" onclick="window.location.href='index.html';">
+                    </a>
+            
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                      <li><a href="#" class="nav-link px-2 text-secondary" onclick="window.location.href='index.html';">Home</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='foryou.html';">Per te</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='offerte.html';">Offerte</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='discovery.html';">Discovery</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='condividi.html';">Condividi</a></li>
+                    </ul>
+            
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" onsubmit="window.location.href='list.html'; return false">
+                      <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Cerca..." aria-label="Search">
+                    </form>
+            
+                    <div class="text-end">
+                      <button type="button" class="btn btn-outline-light me-2">Accedi</button>
+                      <button type="button" class="btn btn-warning">Registrati</button>
+                    </div>
+                  </div>
+                </div>
+              </header>
+        <main>
+            <div class="px-4 py-5 my-5 text-center" id="div1">
+                <h1 class="display-5 fw-bold">Che tipo di attività stai cercando?</h1>
+                <div class="col-lg-6 mx-auto">
+                    <select class="form-select" id="discoveryInput1" aria-label="Floating label select example" autofocus="1">
+                        <option selected>Scegli un tipo di viaggio</option>
+                        <option value="1">Cultura</option>
+                        <option value="2">Avventura</option>
+                        <option value="3">Relax</option>
+                    </select>
+                </div>
+            </div>
+            <div class="px-4 py-5 my-5 text-center" id="div2" hidden>
+              <h1 class="display-5 fw-bold">Dove vuoi andare?</h1>
+              <div class="col-lg-6 mx-auto">
+                  <input type="text" class="form-control" id="discoveryInput2">
+              </div>
+          </div>
+            <div class="px-4 py-5 my-5 text-center" id="div3" hidden>
+                <h1 class="display-5 fw-bold">Scegli la data di inizio e fine</h1>
+                <div class="col-lg-6 mx-auto">
+                    <input type="date" class="form-control" id="discoveryInput3">
+                    <input type="date" class="form-control">
+                </div>
+            </div>
+            <div class="px-4 py-5 my-5 text-center" id="div4" hidden>
+                <h1 class="display-5 fw-bold">Scegli una fascia di prezzo</h1>
+                <div class="col-lg-6 mx-auto">
+                  <input type="number" class="form-control" id="discoveryInput4" placeholder="500€">
+                  <input type="number" class="form-control" placeholder="1000€">
+                </div>
+            </div>
+            <div class="px-4 py-5 my-5 text-center" id="div5" hidden>
+              <h1 class="display-5 fw-bold">In quante persone vuoi viaggiare?</h1>
+              <div class="col-lg-6 mx-auto">
+                <input type="number" class="form-control" id="discoveryInput5" placeholder="1">
+              </div>
+          </div>
+          <div class="discovery-flex">
+            <button id="btn2" name="1" class="btn btn-secondary" onclick="javascript:prev()" hidden>Indietro</button>
+            <button id="btn1" name="1" class="btn btn-primary" onclick="javascript:next()">Continua</button>
+          </div>
+        </main>
+        <script>
+            function next(){
+                var pos= document.getElementById("btn1").name;
+                document.getElementById("div"+pos).setAttribute("hidden", "hidden");
+                pos = pos/1;
+                if(pos == 5){
+                  window.location.href="list.html";
+                }
+                if(pos < 2){
+                  document.getElementById("btn2").removeAttribute("hidden");
+                }
+                pos = pos+1;
+                document.getElementById("div"+pos).removeAttribute("hidden");
+                document.getElementById("discoveryInput"+pos).setAttribute("autofocus", "1");
+                document.getElementById("btn1").name = pos;
+            }
+            function prev(){
+                var pos= document.getElementById("btn1").name;
+                document.getElementById("div"+pos).setAttribute("hidden", "hidden");
+                pos = pos/1;
+                if(pos < 3){
+                  document.getElementById("btn2").setAttribute("hidden", "hidden");
+                }
+                pos = pos-1;
+                document.getElementById("div"+pos).removeAttribute("hidden");
+                document.getElementById("btn1").name = pos;
+            }
+        </script>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0">© 2023 VoyageX, Inc</span>
+          </div><ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><img src="media/twitter.png" alt="twitter" tabindex="0"></li>
+            <li class="ms-3"><img src="media/instagram.png" alt="instagram" tabindex="0"></li>
+            <li class="ms-3"><img src="media/facebook.png" alt="facebook" tabindex="0"></li>
+          </ul>
+        </footer>
+    </body>
+</html>

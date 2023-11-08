@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VoyageX</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+        <link rel="icon" href="media/logo.svg">
+    </head>
+    <body class="bgimg">
+
+            <header class="p-3 text-bg-dark">
+                <div class="container">
+                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                      <img src="media/scritta_logo.png" alt="logo" class="scritta_logo" onclick="window.location.href='index.html';">
+                    </a>
+            
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                      <li><a href="#" class="nav-link px-2 text-secondary" onclick="window.location.href='index.html';">Home</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='foryou.html';">Per te</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='offerte.html';">Offerte</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='discovery.html';">Discovery</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='condividi.html';">Condividi</a></li>
+                    </ul>
+            
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" onsubmit="window.location.href='list.html'; return false">
+                      <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Cerca..." aria-label="Search">
+                    </form>
+            
+                    <div class="text-end">
+                      <button type="button" class="btn btn-outline-light me-2">Accedi</button>
+                      <button type="button" class="btn btn-warning">Registrati</button>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <main class="foryou">
+                <div class="video-section">
+                  <img class="arrow-icon-left" src="media/back_arrow.svg" onclick="javascript:back()">
+                    <iframe name="1" id="videoS" src="media/video1.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img class="arrow-icon-right" src="media/forward_arrow.svg" onclick="javascript:forward()">
+                </div>
+              <div class="flexbox2">
+                <button class="btn btn-primary flexbtn" onclick="window.location.href='info.html'">Scopri di più</button>
+              </div>
+                <script>
+                    function forward(){
+                        var num = document.getElementById("videoS").name;
+                        num = num / 1;
+                        if(num < 6){
+                            num = num + 1;
+                            document.getElementById("videoS").name = num;
+                            var url = "media/video"+ num +".mp4";
+                            document.getElementById("videoS").src = url;
+                        }
+                        if(num == 6){
+                          num = document.getElementById("videoS").name = 0;
+                        }
+                    }
+    
+                    function back(){
+                        var num = document.getElementById("videoS").name;
+                        num = num / 1;
+                        if(num > 1){
+                            num = num - 1;
+                            document.getElementById("videoS").name = num;
+                            var url = "media/video"+ num +".mp4";
+                            document.getElementById("videoS").src = url;
+                        }
+                        if(num == 1){
+                          num = document.getElementById("videoS").name = 7;
+                        }
+                    }
+                </script>
+            </main>
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+              <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0">© 2023 VoyageX, Inc</span>
+              </div><ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><img src="media/twitter.png" alt="twitter" tabindex="0"></li>
+                <li class="ms-3"><img src="media/instagram.png" alt="instagram" tabindex="0"></li>
+                <li class="ms-3"><img src="media/facebook.png" alt="facebook" tabindex="0"></li>
+              </ul>
+            </footer>
+    </body>
+</html>

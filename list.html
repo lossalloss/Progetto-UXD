@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VoyageX</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+        <link rel="icon" href="media/logo.svg">
+    </head>
+    <body class="bgimg">
+
+            <header class="p-3 text-bg-dark">
+                <div class="container">
+                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                      <img src="media/scritta_logo.png" alt="logo" class="scritta_logo" onclick="window.location.href='index.html';">
+                    </a>
+            
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                      <li><a href="#" class="nav-link px-2 text-secondary" onclick="window.location.href='index.html';">Home</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='foryou.html';">Per te</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='offerte.html';">Offerte</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='discovery.html';">Discovery</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='condividi.html';">Condividi</a></li>
+                    </ul>
+            
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" onsubmit="window.location.href='list.html'; return false">
+                      <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Cerca..." aria-label="Search">
+                    </form>
+            
+                    <div class="text-end">
+                      <button type="button" class="btn btn-outline-light me-2">Accedi</button>
+                      <button type="button" class="btn btn-warning">Registrati</button>
+                    </div>
+                  </div>
+                </div>
+              </header>
+        <main class="list-main">
+          <div class="mb-3">
+            <select class="form-select custom-dropdown" id="floatingSelect" aria-label="Floating label select example">
+              <option selected>Ordina per</option>
+              <option value="1">Data</option>
+              <option value="2">Prezzo</option>
+              <option value="3">Durata del viaggio</option>
+              <option value="3">Preferiti</option>
+            </select>
+          </div>
+
+              <div class="card mb-3" style="cursor: pointer;" onclick="window.location.href='info.html'">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="media/New_York.jpg" class="img-fluid rounded-start" alt="New York skyline">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">New York</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus ante, pulvinar ut rhoncus nec, rutrum nec neque.
+                        Fusce iaculis enim rhoncus eros mollis suscipit et vel dui.
+                        Quisque a pellentesque dui. Pellentesque non condimentum odio, id posuere massa. Nunc.</p>
+                      <p class="card-text"><small class="text-muted">1500€</small></p>
+                      <img src="media/favorite_empty.png" onmouseenter="src='media/favorite_full.png'" onmouseleave="src='media/favorite_empty.png'" alt="favorite">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="cursor: pointer;" onclick="window.location.href='info.html'">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="media/peru.jpg" class="img-fluid rounded-start" alt="immagine di macchu picchu">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Perù</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus ante, pulvinar ut rhoncus nec, rutrum nec neque.
+                        Fusce iaculis enim rhoncus eros mollis suscipit et vel dui.
+                        Quisque a pellentesque dui. Pellentesque non condimentum odio, id posuere massa. Nunc.</p>
+                      <p class="card-text"><small class="text-muted">2300€</small></p>
+                      <img src="media/favorite_empty.png" onmouseenter="src='media/favorite_full.png'" onmouseleave="src='media/favorite_empty.png'" alt="favorite">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="cursor: pointer;" onclick="window.location.href='info.html'">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="media/mdc.jpg" class="img-fluid rounded-start" alt="immagine di uno snowboarder che salta">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Madonna di campiglio</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus ante, pulvinar ut rhoncus nec, rutrum nec neque.
+                        Fusce iaculis enim rhoncus eros mollis suscipit et vel dui.
+                        Quisque a pellentesque dui. Pellentesque non condimentum odio, id posuere massa. Nunc.</p>
+                      <p class="card-text"><small class="text-muted">500€</small></p>
+                      <img src="media/favorite_empty.png" onmouseenter="src='media/favorite_full.png'" onmouseleave="src='media/favorite_empty.png'" alt="favorite">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="cursor: pointer;" onclick="window.location.href='info.html'">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="media/maldive.jpg" class="img-fluid rounded-start" alt="hotel palafitte maldive">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Maldive</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus ante, pulvinar ut rhoncus nec, rutrum nec neque.
+                        Fusce iaculis enim rhoncus eros mollis suscipit et vel dui.
+                        Quisque a pellentesque dui. Pellentesque non condimentum odio, id posuere massa. Nunc.</p>
+                      <p class="card-text"><small class="text-muted">2000€</small></p>
+                      <img src="media/favorite_empty.png" onmouseenter="src='media/favorite_full.png'" onmouseleave="src='media/favorite_empty.png'" alt="favorite">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="cursor: pointer;" onclick="window.location.href='info.html'">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="media/spa.jpg" class="img-fluid rounded-start" alt="donna che si rilassa in una spa">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">SPA 2 giorni 1 notte</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean risus ante, pulvinar ut rhoncus nec, rutrum nec neque.
+                        Fusce iaculis enim rhoncus eros mollis suscipit et vel dui.
+                        Quisque a pellentesque dui. Pellentesque non condimentum odio, id posuere massa. Nunc.</p>
+                      <p class="card-text"><small class="text-muted">140€</small></p>
+                      <img src="media/favorite_empty.png" onmouseenter="src='media/favorite_full.png'" onmouseleave="src='media/favorite_empty.png'" alt="favorite">
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0">© 2023 VoyageX, Inc</span>
+          </div><ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><img src="media/twitter.png" alt="twitter" tabindex="0"></li>
+            <li class="ms-3"><img src="media/instagram.png" alt="instagram" tabindex="0"></li>
+            <li class="ms-3"><img src="media/facebook.png" alt="facebook" tabindex="0"></li>
+          </ul>
+        </footer>
+    </body>
+</html>

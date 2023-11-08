@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VoyageX</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+        <link rel="icon" href="media/logo.svg">
+    </head>
+    <body class="bgimg">
+
+            <header class="p-3 text-bg-dark">
+                <div class="container">
+                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                      <img src="media/scritta_logo.png" alt="logo" class="scritta_logo" onclick="window.location.href='index.html';">
+                    </a>
+            
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                      <li><a href="#" class="nav-link px-2 text-secondary" onclick="window.location.href='index.html';">Home</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='foryou.html';">Per te</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='offerte.html';">Offerte</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='discovery.html';">Discovery</a></li>
+                      <li><a href="#" class="nav-link px-2 text-white" onclick="window.location.href='condividi.html';">Condividi</a></li>
+                    </ul>
+            
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search" onsubmit="window.location.href='list.html'; return false">
+                      <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Cerca..." aria-label="Search">
+                    </form>
+            
+                    <div class="text-end">
+                      <button type="button" class="btn btn-outline-light me-2">Accedi</button>
+                      <button type="button" class="btn btn-warning">Registrati</button>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <main>
+                <div class="background1">
+                  <div class="video-section">
+                    <iframe width="560" height="315" src="media/video6.mp4" title="Video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                  <div class="p-5 mb-4 bg-light rounded-3">
+                    <div class="container-fluid py-5"><div class="card text-bg-dark">
+                      <img src="media/New_York.jpg" class="card-img main-img" alt="new york skyline">
+                      <div class="card-img-overlay">
+                        <h1 class="card-title text-dark">New York</h1>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="row align-items-md-stretch">
+                    <div class="col-md-6">
+                      <div class="h-100 p-5 text-bg-dark rounded-3">
+                        <h2>Descrizione</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non lorem eget lacus maximus tempus. Ut ligula elit, blandit eget vulputate nec, vehicula sit amet nisi. Nunc eget scelerisque lectus. Curabitur ac sodales massa, id auctor ipsum. Maecenas iaculis commodo elit, in ultricies tellus. Phasellus nec sapien ligula. Ut leo quam, interdum ac purus et, lacinia porttitor erat. Quisque a tristique metus. Sed enim augue, eleifend vel vulputate sed, iaculis ut arcu.</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="h-100 p-5 bg-light border rounded-3">
+                        <h4>Aggiungi ai preferiti <img src="media/favorite_empty.png" onmouseenter="src='media/favorite_full.png'" onmouseleave="src='media/favorite_empty.png'" alt="favorite"></h4>
+                        <h2>Prezzo</h2>
+                        <h5>1500€</h5>
+                        <h2>Date</h2>
+                        <h5>20 maggio 2023-30 maggio 2023</h5>
+                        <h2>Contatti</h2>
+                        <h4><E-mail>mario.rossi@gmail.com</E-mail> - +39 342 234 1234</h4>
+                      </div>
+                    </div>
+                  </div>
+              
+                
+                <h3 style="margin: 20px;">Recensioni</h3>
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Lascia una recensione</h4> 
+                    <img id="s1" src="media/star-empty.png" onmouseenter="javascript:stars_fill(1)" onmouseleave="javascript:stars_empty(1)">
+                    <img id="s2" src="media/star-empty.png" onmouseenter="javascript:stars_fill(2)" onmouseleave="javascript:stars_empty(2)">
+                    <img id="s3" src="media/star-empty.png" onmouseenter="javascript:stars_fill(3)" onmouseleave="javascript:stars_empty(3)">
+                    <img id="s4" src="media/star-empty.png" onmouseenter="javascript:stars_fill(4)" onmouseleave="javascript:stars_empty(4)">
+                    <img id="s5" src="media/star-empty.png" onmouseenter="javascript:stars_fill(5)" onmouseleave="javascript:stars_empty(5)">
+                  </div>
+                  <div class="card-body">
+                    <textarea type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Scrivi qui la tua recensione"></textarea>
+                    <button class="btn btn-primary" style="margin-top: 15px;">Invia</button>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    Marco  <img src="media/star-filled.png"><img src="media/star-filled.png"><img src="media/star-filled.png"><img src="media/star-filled.png"><img src="media/star-filled.png">
+                  </div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Praesent vel metus diam. Sed consectetur id diam vel fermentum. Nam dignissim.</p>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    Maria  <img src="media/star-filled.png"><img src="media/star-filled.png"><img src="media/star-filled.png"><img src="media/star-filled.png"><img src="media/star-half.png">
+                  </div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Praesent vel metus diam. Sed consectetur id diam vel fermentum. Nam dignissim.</p>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    Sasha  <img src="media/star-filled.png"><img src="media/star-filled.png"><img src="media/star-half.png">
+                  </div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Praesent vel metus diam. Sed consectetur id diam vel fermentum. Nam dignissim.</p>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    Frank  <img src="media/star-filled.png"><img src="media/star-filled.png"><img src="media/star-half.png">
+                  </div>
+                  <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Praesent vel metus diam. Sed consectetur id diam vel fermentum. Nam dignissim.</p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </main>
+            <script>
+              function stars_fill(num){
+                s1 = document.getElementById("s1");
+                s2 = document.getElementById("s2");
+                s3 = document.getElementById("s3");
+                s4 = document.getElementById("s4");
+                s5 = document.getElementById("s5");
+                if(num > 0){
+                  s1.src="media/star-filled.png"
+                }
+                if(num > 1){
+                  s2.src="media/star-filled.png"
+                }
+                if(num > 2){
+                  s3.src="media/star-filled.png"
+                }
+                if(num > 3){
+                  s4.src="media/star-filled.png"
+                }
+                if(num > 4){
+                  s5.src="media/star-filled.png"
+                }
+              }
+              
+              function stars_empty(num){
+                s1 = document.getElementById("s1");
+                s2 = document.getElementById("s2");
+                s3 = document.getElementById("s3");
+                s4 = document.getElementById("s4");
+                s5 = document.getElementById("s5");
+                if(num > 0){
+                  s1.src="media/star-empty.png"
+                }
+                if(num > 1){
+                  s2.src="media/star-empty.png"
+                }
+                if(num > 2){
+                  s3.src="media/star-empty.png"
+                }
+                if(num > 3){
+                  s4.src="media/star-empty.png"
+                }
+                if(num > 4){
+                  s5.src="media/star-empty.png"
+                }
+              }
+            </script>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0">© 2023 VoyageX, Inc</span>
+          </div><ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><img src="media/twitter.png" alt="twitter" tabindex="0"></li>
+            <li class="ms-3"><img src="media/instagram.png" alt="instagram" tabindex="0"></li>
+            <li class="ms-3"><img src="media/facebook.png" alt="facebook" tabindex="0"></li>
+          </ul>
+        </footer>
+    </body>
+</html>
